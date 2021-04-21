@@ -17,6 +17,9 @@ public class Dice : MonoBehaviour
         colourIndex = Random.Range(0, 6);
         GetComponent<SpriteRenderer>().color = colors[colourIndex];
         faceValue = Random.Range(1, 7);
+
+        transform.Find(faceValue.ToString()).gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame

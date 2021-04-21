@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] topSlots = new GameObject[5];
-    public GameObject[] bottomSlots = new GameObject[5];
-    public GameObject[] DicePrefab = new GameObject[5];
+    public GameObject[] topSlots = new GameObject[5]; 
+    public GameObject[] bottomSlots = new GameObject[5]; 
+    public GameObject DicePrefab; 
+
    
-    Dice[] topRow = new Dice[5];
-    Dice[] bottomRow = new Dice[5];
+    Dice[] topRow = new Dice[5]; //set the top as five spot in specific position 
+    Dice[] bottomRow = new Dice[5]; //set the bottom as five spot in specific position
     Dice currentDie;
+
 
 
     
@@ -19,12 +21,14 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         
-
+        // spawn the dice in top and bottom rows. 
         for (int i = 0; i < topRow.Length; i++)
         {
-            topRow[i] = Instantiate(DicePrefab[i], topSlots[i].transform.position,Quaternion.identity).GetComponent<Dice>();
-            bottomRow[i] = Instantiate(DicePrefab[i], bottomSlots[i].transform.position, Quaternion.identity).GetComponent<Dice>();
+            
+            topRow[i] = Instantiate(DicePrefab, topSlots[i].transform.position,Quaternion.identity).GetComponent<Dice>();
+            bottomRow[i] = Instantiate(DicePrefab, bottomSlots[i].transform.position, Quaternion.identity).GetComponent<Dice>();
 
+            //set the boolean condition, if the dice is in the bottom row. 
             topRow[i].isOnBottomRow = false;
             bottomRow[i].isOnBottomRow = true;
 

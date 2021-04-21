@@ -893,13 +893,8 @@ MonoBehaviour:
   - {fileID: 869529143}
   - {fileID: 836245952}
   - {fileID: 1183918286}
-  DicePrefab:
-  - {fileID: 7263730939282199702, guid: 6b5952d1a643c674384ddfd1c149a9de, type: 3}
-  - {fileID: 702930180645453769, guid: 7653028c64144e24ca1366f6968e20fc, type: 3}
-  - {fileID: 5521918458806969096, guid: 8705d14e0cdb33d47b4ba6462d3feddf, type: 3}
-  - {fileID: 4713085694557471636, guid: f340ff180d1b1ef4e867d47f5955e99a, type: 3}
-  - {fileID: 7071434059423932368, guid: f752e03932310184c8520d496921cbec, type: 3}
-  - {fileID: 7434120292912893036, guid: 287e15d08a4fbc54ea35046dc5f55d80, type: 3}
+  DicePrefab: {fileID: 8054939718801377876, guid: 7dddd96054b59464da22b2865ce5b685,
+    type: 3}
 --- !u!4 &1124582194
 Transform:
   m_ObjectHideFlags: 0

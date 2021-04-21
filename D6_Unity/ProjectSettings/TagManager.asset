@@ -14,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Dices
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Dices
+    uniqueID: 1312536617
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
