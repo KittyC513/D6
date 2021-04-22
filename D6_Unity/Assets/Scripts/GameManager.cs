@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
    
     Dice[] topRow = new Dice[5]; //set the top as five spot in specific position 
     Dice[] bottomRow = new Dice[5]; //set the bottom as five spot in specific position
-    Dice currentDie;
 
 
 
