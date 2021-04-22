@@ -6,6 +6,22 @@ using UnityEngine.UI;
 public class processCount : MonoBehaviour
 {
     public Slider slider;
+    public GameObject dice;
+    bool stepIncreased = false;
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+    
+    
+    }
+    
+ 
+    
 
     public void SetMaxStep(int totalStep) // set the max step of the game
     {

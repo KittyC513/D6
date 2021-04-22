@@ -5,18 +5,31 @@ using UnityEngine.UI;
 
 public class stepCount : MonoBehaviour
 {
-    public static int stepCounting = 0;
-    Text step;
+    public Slider slider;
+
+   
+    
     // Start is called before the first frame update
     void Start()
     {
-        //access the text component of stepCount
-        step = GetComponent<Text>();
+
+
     }
 
+    public void SetMaxStep(int steps) // set the max value of life bar
+    {
+        slider.maxValue = steps;
+        slider.value = steps;
+    }
     // Update is called once per frame
     void Update()
     {
-        step.text = "" + stepCounting + "/" ;
+        
+    }
+
+
+    void SetStep(int steps) // set the life bar relating the slider component
+    {
+        slider.value = steps;
     }
 }

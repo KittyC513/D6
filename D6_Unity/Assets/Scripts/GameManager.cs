@@ -6,20 +6,28 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] topSlots = new GameObject[5]; 
     public GameObject[] bottomSlots = new GameObject[5]; 
-    public GameObject DicePrefab; 
+    public GameObject DicePrefab;
 
-   
+
+
+
+
+
     Dice[] topRow = new Dice[5]; //set the top as five spot in specific position 
     Dice[] bottomRow = new Dice[5]; //set the bottom as five spot in specific position
 
 
 
+
+        
     
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+      
+
         // spawn the dice in top and bottom rows. 
         for (int i = 0; i < topRow.Length; i++)
         {
@@ -37,11 +45,14 @@ public class GameManager : MonoBehaviour
         }
 
 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+
 }
